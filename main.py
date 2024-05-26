@@ -45,6 +45,3 @@ def handle_process_video(data):
 @socketio.on('processed_video')
 def handle_processed_video(data):
     emit('processed_video', data)
-
-if __name__ == '__main__':
-    socketio.run(app, port=5000)
